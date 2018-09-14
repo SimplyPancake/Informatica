@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 html, body {
   width: 100%;
@@ -20,28 +20,29 @@ html, body {
   width: 100%;
   height: 100%;
   background: rgba(248, 248, 255, 0.25);
-  vertical-align: middle;
 }
 
 .main > div > p {
+  vertical-align: middle;
+  font-weight: bold;
   font-size: 20;
 }
 
-.1-1 {
-  top: 100%;
+.blok1-1 {
+  /* top: 100%; */
   left: 0%;
   width: 50%;
-  height 50vw;
+  height 100%;
 }
 
-.1-2 {
-
-}
-
-.2-1 {
+.blok1-2 {
 
 }
 
-.2-2 {
+.blok2-1 {
+
+}
+
+.blok2-2 {
 
 }

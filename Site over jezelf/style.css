@@ -1,48 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
 
 html, body {
   width: 100%;
   height: 100%;
   /* Een trucje om ook height in 100% te gebruiken :D */
-  font-family: 'Raleway', sans-serif;
-
 }
 
-.main {
-  width: 100%;
-  height: 100%;
-  background-image: url("https://wallpapercave.com/wp/JUwBXRw.jpg");
-  background-size: cover;
+
+.landing{
+  z-index: 5;
+  position: absolute;
   text-align: center;
+  left: 9.06015625%;
+  top: 26.16888888888889%;
+  width: 79.4875%;
+  height: 16.092222222222226%;
 }
 
-.main > div {
-  width: 100%;
-  height: 100%;
-  background: rgba(248, 248, 255, 0.25);
+.landingText{
+  z-index: 5;
+  font-family: 'Lato', sans-serif;
+  /* font-size 1em = 10px on default browser settings */
+  font-weight: 300;
+  font-size: 7em;
+  color: white;
 }
 
-.main > div > p {
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 20;
+.landingSubText{
+  z-index: 5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+  opacity: 0.7;
 }
 
-.blok1-1 {
-  /* top: 100%; */
-  left: 0%;
-  width: 50%;
-  height 100%;
+.singleContent{
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  text-align: center;
+  margin: 0px;
+  float: left;
 }
 
-.blok1-2 {
 
-}
-
-.blok2-1 {
-
-}
-
-.blok2-2 {
-
+.wsText{
+  color: #00000080;
+  position: relative;
+  top: 25%;
+  z-index: 5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  text-align: center;
 }

@@ -56,14 +56,6 @@ html, body {
   text-align: center;
 }
 
-a {
-  color: black;
-}
-
-.blok1{
-  overflow: hidden;
-}
-
-.blok2{
+.blok1, blok2 {
   overflow: hidden;
 }

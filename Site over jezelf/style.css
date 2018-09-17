@@ -63,3 +63,7 @@ html, body {
 .animated {
   animation-duration: .75s;
 }
+
+.zwart {
+  color: black;
+}

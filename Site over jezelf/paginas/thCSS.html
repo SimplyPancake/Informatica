@@ -3,8 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title>CSS uitleg</title>
+    <!-- Prism.css (voor codeblock) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.css">
+    <!-- AOS CSS: -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.CSS: -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- Eigen CSS: -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- AOS script: -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JQuery script: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Prism.js script (voor codeblock) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+    <!-- Eigen script: -->
+    <script type="text/javascript" src="../js/script.js"></script>
   </head>
   <body>
+    <!-- Achtergrond: -->
+    <img src="../media/wall2.jpg" width="100%" height="100%" style="object-fit: cover;" />
 
+    <!-- Hoofdtekst: -->
+    <div class="landing" data-aos="fade-up">
+      <font class="landingText hvr-grow-rotate">CSS-eigenschappen uitleg!</font><br>
+      <font class="landingSubText hvr-grow">Een (simpele) CSS uitleg!</font>
+    </div>
   </body>
+
+  <!-- Blok 1: -->
+  <div class="blok">
+    <div class="singleContent">
+      <div class="wsText" data-aos="fade-down"><a class="hvr-grow-rotate" style="color: black;">CSS - wat kan het nou?</a>
+        <ul style="text-align: left;">
+          <li>Animaties</li>
+          <li>Effecten</li>
+          <li>Opmaak</li>
+        </ul>
+      </div>
+    </div>
+    <div class="singleContent" data-aos="fade-left">
+      <img src="../media/CSS/img1.png" style="width: 100%; height: 50vw; object-fit: cover;" />
+    </div>
+  </div>
+
+  <!-- Blok 2: -->
+  <div class="blok">
+    <div class="singleContent" data-aos="fade-right">
+      <pre><code class="language-css">
+        @import url('https://fonts.googleapis.com/css?family=Charmonman');
+        @import url("fineprint.css") print;
+        @import url("bluish.css") speech;
+        @import 'custom.css';
+        @import url("chrome://communicator/skin/");
+        @import "common.css" screen;
+        @import url('landscape.css') screen and (orientation:landscape);
+      </code></pre>
+    </div>
+    <div class="singleContent">
+      <div class="wsText" data-aos="fade-down"><a class="zwart hvr-grow-rotate">Ik ga je wat leren over @import!</a><br><br>
+        <font style="font-style: italic;">
+          @import zorgt ervoor dat je een stylesheet in een ander stylesheet kan zetten.<br>
+          Dit wordt gebruikt in bijv. <a class="zwart" href="https://fonts.google.com/" target="_blank">google fonts</a>.<br>
+          Je kunt dus nu een lettertype in CSS inporteren uit een google-server!<br>
+        </font>
+      </div>
+    </div>
+  </div>
 </html>

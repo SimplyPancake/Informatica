@@ -56,7 +56,7 @@ html, body {
   text-align: center;
 }
 
-.blok1, blok2 {
+.blok { 
   overflow: hidden;
 }
 

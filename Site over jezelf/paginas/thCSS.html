@@ -22,11 +22,11 @@
   </head>
   <body>
     <!-- Achtergrond: -->
-    <img src="../media/wall2.jpg" width="100%" height="100%" style="object-fit: cover;" />
+    <img src="../media/CSS/wall1.png" alt="een leuk plaatje :P" width="100%" height="100%" style="object-fit: cover;" />
 
     <!-- Hoofdtekst: -->
     <div class="landing" data-aos="fade-up">
-      <font class="landingText hvr-grow-rotate">CSS-eigenschappen uitleg!</font><br>
+      <font class="landingText hvr-grow-rotate">CSS-eigenschappen uitleg!</font><br />
       <font class="landingSubText hvr-grow">Een (simpele) CSS uitleg!</font>
     </div>
   </body>
@@ -34,7 +34,7 @@
   <!-- Blok 1: -->
   <div class="blok">
     <div class="singleContent">
-      <div class="wsText" data-aos="fade-down"><a class="hvr-grow-rotate" style="color: black;">CSS - wat kan het nou?</a>
+      <div class="wsText" data-aos="fade-down"><a class="hvr-grow-rotate zwart">CSS - wat kan het nou?</a>
         <ul style="text-align: left;">
           <li>Animaties</li>
           <li>Effecten</li>
@@ -43,29 +43,32 @@
       </div>
     </div>
     <div class="singleContent" data-aos="fade-left">
-      <img src="../media/CSS/img1.png" style="width: 100%; height: 50vw; object-fit: cover;" />
+      <img src="../media/CSS/img1.png" alt="een leuk plaatje :P" style="width: 100%; height: 50vw; object-fit: cover;" />
     </div>
   </div>
 
   <!-- Blok 2: -->
   <div class="blok">
     <div class="singleContent" data-aos="fade-right">
-      <pre><code class="language-css">
-        @import url('https://fonts.googleapis.com/css?family=Charmonman');
-        @import url("fineprint.css") print;
-        @import url("bluish.css") speech;
-        @import 'custom.css';
-        @import url("chrome://communicator/skin/");
-        @import "common.css" screen;
-        @import url('landscape.css') screen and (orientation:landscape);
-      </code></pre>
+      <div class="wsText" data-aos="fade-right">
+        <!-- Dit is de CSS code: -->
+        <pre><code class="language-css">
+          @import url('https://fonts.googleapis.com/css?family=Charmonman');
+          @import url("fineprint.css") print;
+          @import url("bluish.css") speech;
+          @import 'custom.css';
+          @import url("chrome://communicator/skin/");
+          @import "common.css" screen;
+          @import url('landscape.css') screen and (orientation:landscape);
+        </code></pre>
+      </div>
     </div>
     <div class="singleContent">
-      <div class="wsText" data-aos="fade-down"><a class="zwart hvr-grow-rotate">Ik ga je wat leren over @import!</a><br><br>
+      <div class="wsText" data-aos="fade-down"><a class="zwart hvr-grow-rotate">Ik ga je wat leren over @import!</a><br /><br />
         <font style="font-style: italic;">
-          @import zorgt ervoor dat je een stylesheet in een ander stylesheet kan zetten.<br>
-          Dit wordt gebruikt in bijv. <a class="zwart" href="https://fonts.google.com/" target="_blank">google fonts</a>.<br>
-          Je kunt dus nu een lettertype in CSS inporteren uit een google-server!<br>
+          @import zorgt ervoor dat je een stylesheet in een ander stylesheet kan zetten.<br />
+          Dit wordt gebruikt in bijv. <a class="zwart hvr-wobble-horizontal" href="https://fonts.google.com/" target="_blank">google fonts</a>.<br />
+          Je kunt dus nu een lettertype in CSS inporteren uit een google-server!<br />
         </font>
       </div>
     </div>

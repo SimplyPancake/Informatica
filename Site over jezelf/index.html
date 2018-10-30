@@ -16,9 +16,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Eigen script: -->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Pagina specifiek script: -->
+    <script>
+
+    var pctScrolled;
+
+      function amountscrolled(){
+    	   var winheight = $(window).height()
+    	   var docheight = $(document).height()
+    	   var scrollTop = $(window).scrollTop()
+    	   var trackLength = docheight - winheight
+    	   pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+       }
+
+    $(window).on("scroll", function(){
+    	amountscrolled()
+      console.log(pctScrolled);
+
+      if (pctScrolled > 80) {
+        //Verstop de navbar
+        $(".navBar").fadeOut();
+      } else if (pctScrolled < 80) {
+        // Kom maar weer terug, Navbar
+        $(".navBar").fadeIn();
+      }
+    })
+
+    </script>
   <!-- ////////////////////////////////////////////////////// -->
   </head>
   <body>
+
+
+    <!-- Navbar zweeft boven alles heen, zie style.css -->
+    <div class="navBar">
+      <div class="landingSubText">
+        <a><a href="index.html" class="hvr-wobble-horizontal">Home</a> // <a href="paginas/thCSS.html" class="hvr-wobble-horizontal">Theorie CSS</a> // <a href="paginas/thBinair.html" class="hvr-wobble-horizontal">Theorie binaire getallen</a> // <a href="paginas/thComp.html" class="hvr-wobble-horizontal">Theorie compressie</a> </a>
+      </div>
+    </div>
 
     <!-- Achtergrond: -->
     <img src="media/Index/wall1.png" alt="achtergrond" width="100%" height="100%" style="object-fit: cover;" />
@@ -42,7 +77,7 @@
         </div>
       </div>
       <div class="singleContent" data-aos="fade-left">
-        <img src="media/Index/img2.png" alt="een leuk plaatje :P" style="width: 100%; height: 50vw; object-fit: cover;" />
+        <img src="media/Index/img2.gif" alt="een leuk plaatje :P" style="width: 100%; height: 50vw; object-fit: cover;" />
       </div>
     </div>
 
@@ -73,7 +108,7 @@
         </div>
       </div>
       <div class="singleContent">
-        <img src="media/Index/img3.png" alt="een leuk plaatje :P"alt="een leuk plaatje :P" data-aos="fade-left" style="width: 100%; height: 50vw; object-fit: cover;" />
+        <img src="media/Index/img3.gif" alt="een leuk plaatje :P"alt="een leuk plaatje :P" data-aos="fade-left" style="width: 100%; height: 50vw; object-fit: cover;" />
       </div>
     </div>
   </body>

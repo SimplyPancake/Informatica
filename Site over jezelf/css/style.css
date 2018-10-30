@@ -7,6 +7,38 @@ html, body {
   margin: 0;
 }
 
+/* ===============================================================
+NAVIGATIEBALK - NAVIGATIEBALK - NAVIGATIEBALK - NAVIGATIEBALK -
+=============================================================== */
+.navBar {
+  /* Eerst laten we de hoogte en breedte bepalen: */
+  width: 100%;
+  height: 15%;
+
+  /* Dan pakken we position: fixed, want die geeft ons een mooie 'hover'.
+  Toch geef ik het een z-index, want anders komt de navbar niet boven de youtube-video uit. */
+  position: fixed;
+  z-index: 1;
+
+  /* We willen dat de tekst in het midden staat: */
+  text-align: center;
+
+  /* En dan de achtergrondkleur.. Ik doe het als een gradient.*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaaaaa+0,d3d3d3+93&1+0,0.46+52,0+100 */
+  background: -moz-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(193,193,193,0.46) 52%, rgba(211,211,211,0.07) 93%, rgba(211,211,211,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(170,170,170,1) 0%,rgba(193,193,193,0.46) 52%,rgba(211,211,211,0.07) 93%,rgba(211,211,211,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(170,170,170,1) 0%,rgba(193,193,193,0.46) 52%,rgba(211,211,211,0.07) 93%,rgba(211,211,211,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#00d3d3d3',GradientType=0 ); /* IE6-9 */
+}
+
+/* Weg met die stomme paarse en blauwe kleur van een href! */
+.navBar > div > a:link, .navBar > div > a:visited {
+  color: white;
+}
+
+/* =======================================================================
+LANDING PAGE - LANDING PAGE - LANDING PAGE - LANDING PAGE - LANDING PAGE -
+========================================================================== */
 
 .landing {
   z-index: 5;
@@ -19,7 +51,6 @@ html, body {
 }
 
 .landingText {
-  z-index: 5;
   font-family: 'Lato', sans-serif;
   /* font-size 1em = 10px on default browser settings */
   font-weight: 300;
@@ -35,6 +66,10 @@ html, body {
   font-weight: 300;
   opacity: 0.7;
 }
+
+/* ============================================================================
+CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT - CONTENT -
+=============================================================================== */
 
 .singleContent {
   position: relative;
@@ -68,6 +103,10 @@ html, body {
 .blok {
   overflow: hidden;
 }
+
+/* ============================================================================
+EXTRA - EXTRA - EXTRA - EXTRA - EXTRA - EXTRA - EXTRA - EXTRA - EXTRA - EXTRA -
+=============================================================================== */
 
 .animated {
   animation-duration: .75s;

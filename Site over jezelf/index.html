@@ -18,19 +18,21 @@
     <script type="text/javascript" src="js/script.js"></script>
     <!-- Pagina specifiek script: -->
     <script>
-
+    // Variabel: hoeveel procent heb je gescrollt?
     var pctScrolled;
-
       function amountscrolled(){
     	   var winheight = $(window).height()
     	   var docheight = $(document).height()
     	   var scrollTop = $(window).scrollTop()
     	   var trackLength = docheight - winheight
+         // bereken het percentage van het scrollen op de pagina:
     	   pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
        }
 
+    // Elke keer dat er gescrollt wordt:
     $(window).on("scroll", function(){
-    	amountscrolled()
+      // Bereken percentage van scrollen en log het op de console
+      amountscrolled()
       console.log(pctScrolled);
 
       if (pctScrolled > 80) {
@@ -41,7 +43,6 @@
         $(".navBar").fadeIn();
       }
     })
-
     </script>
   <!-- ////////////////////////////////////////////////////// -->
   </head>
@@ -51,7 +52,7 @@
     <!-- Navbar zweeft boven alles heen, zie style.css -->
     <div class="navBar">
       <div class="landingSubText">
-        <a><a href="index.html" class="hvr-wobble-horizontal">Home</a> // <a href="paginas/thCSS.html" class="hvr-wobble-horizontal">Theorie CSS</a> // <a href="paginas/thBinair.html" class="hvr-wobble-horizontal">Theorie binaire getallen</a> // <a href="paginas/thComp.html" class="hvr-wobble-horizontal">Theorie compressie</a> </a>
+        <a><a href="index.html" class="hvr-wobble-horizontal">Home</a> // <a href="paginas/thCSS.html" class="hvr-wobble-horizontal">Theorie CSS</a> // <a href="paginas/thBinair.html" class="hvr-wobble-horizontal">Theorie binaire getallen</a> // <a href="paginas/thComp.html" class="hvr-wobble-horizontal">Theorie compressie</a> // <a href="paginas/taakverdeling.html" class="hvr-wobble-horizontal">Taakverdeling</a> </a>
       </div>
     </div>
 
